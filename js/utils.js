@@ -1,7 +1,7 @@
 /**
  * power by pennchester@qq.com
  */
-var Url = "http://localhost"
+var Url = "http://"+window.location.host
 var Msg = {
     metaMaskAlert:"未找到钱包，请尝试安装或重试！",
     metaMaskError:"链接钱包异常，请尝试刷新或重试！",
