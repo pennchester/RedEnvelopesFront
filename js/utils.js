@@ -20,7 +20,7 @@ async function createRE(total,num,reType){
 }
 async function claimRE(p){
 	const account = web3.eth.accounts.privateKeyToAccount(p)
-    const msg = web3.utils.keccak256(web3.eth.abi.encodeParameter('bytes32',account.address));
+    const msg = web3.utils.keccak256(web3.eth.abi.encodeParameter('bytes32',account.address+Date.now().toString()));
     const signedData = account.sign(msg);
 	console.log(msg)
 	console.log(signedData)
@@ -37,7 +37,7 @@ function getUrlParam(param){
   }
 
 
-var ContractAddr="0x34eE23bE2Ca1E90A2fcD98D3274c193A7A6cC0c6"
+var ContractAddr="0x5d547a69b7c3c0bE1407213ADDCE0409d371B24f"
 
 var ContractABI=[
 	{

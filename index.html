@@ -116,7 +116,7 @@ var connectMetaMask = ()=>{
 
 var claim = ()=>{
     claimRE($("#inputPwd").val()).catch(err=>{
-
+        console.log(err)
     }).then(r=>{
         console.log(r)
     });
