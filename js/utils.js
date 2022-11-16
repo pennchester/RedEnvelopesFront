@@ -20,7 +20,7 @@ async function createRE(total,num,reType){
 }
 async function claimRE(p){
 	const account = web3.eth.accounts.privateKeyToAccount(p)
-    const msg = web3.utils.keccak256(web3.eth.abi.encodeParameter('bytes32',account.address));
+    const msg = web3.utils.keccak256(web3.eth.abi.encodeParameter('bytes32',account.address+new Date().toString()));
     const signedData = account.sign(msg);
 	console.log(msg)
 	console.log(signedData)
