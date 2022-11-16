@@ -139,6 +139,77 @@ var ContractABI=[
 		"outputs": [],
 		"stateMutability": "payable",
 		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "getOwner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "addr",
+				"type": "address"
+			}
+		],
+		"name": "getREInfo",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "Total",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "Num",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Single",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum REType",
+						"name": "Type",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bool",
+						"name": "Init",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct RedEnvelopeModel",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
 	}
 ]
 
